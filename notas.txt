@@ -1,0 +1,5 @@
+notas.txt
+ansible prueba -m ping -i inventory.txt
+ssh -i ansib.pem admin@123.1.0.96
+ansible-playbook playbook-holamundo.yaml -i hosts
+cp /home/admin/proyect/clase-07292021/{ansible.cfg,inventory.txt,hosts} /home/admin/proyect/clase-08052021/

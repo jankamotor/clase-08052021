@@ -1,0 +1,1 @@
+prueba ansible_host=123.1.0.96 ansible_ssh_private_key_file=/home/admin/ansib.pem

@@ -1,0 +1,16 @@
+---
+  - name: ejecutar holamundo.sh en el host remoto
+    hosts: ucreativa
+    tasks:
+      - name: copy file hola_mundo.sh
+        copy:
+          src: /home/admin/proyect/clase-08052021/hola_mundo.sh
+          dest: /home/admin/
+          owner: admin
+          group: admin
+          mode: 0644
+      - name: correr archivo hola_mundo.sh
+        register: holamundooutput
+        command: sh /home/admin/hola_mundo.sh
+      - debug:
+          var: holamundooutput.stdout_lines
